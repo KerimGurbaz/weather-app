@@ -19,7 +19,7 @@ h1 {
 }
 
 button {
-  background-color: red;
+  background-color: rgb(203, 65, 41);
   color: white;
   padding: 1rem;
   font-size: 1.5rem;
@@ -43,21 +43,44 @@ button {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  height: 50vh;
 }
 .city {
   background-color: white;
-  color: red;
-  margin: 1rem;
-  padding: 1rem;
-  font-size: 1.5rem;
+  color: black;
+  padding: 1rem 2rem;
+  font-size: 2rem;
   border-radius: 2rem;
+  border: 3px solid red;
+  height: 100%;
+  width: 350px;
+  margin: 1rem;
 }
-.another {
-  position: absolute;
-  left: 16rem;
-  top: 16rem;
+.city p:nth-child(1) {
+  color: gray;
+}
+.city > p:first-child > sup {
+  background-color: orange;
+  border-radius: 0.9rem;
+  padding: 0.2rem 0.4rem;
   color: white;
-  justify-content: start;
-  align-items: center;
+}
+.city p:nth-child(2) {
+  font-size: 4rem;
+  font-weight: 800;
+  padding-left: 1rem;
+  font-size: 6rem;
+  margin-top: 0;
+}
+.city p:nth-child(3) {
+  width: 60%;
+  margin-top: -3rem;
+}
+img {
+  width: 100%;
+}
+
+.another {
+  color: white;
 }

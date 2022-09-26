@@ -15,7 +15,7 @@ if(cities.innerHTML.toLowerCase().includes(input.value.toLowerCase())){
     const par = document.createElement("p");
     par.className ="par"
     another.appendChild(par);
-    par.innerText ="You already know";
+    par.innerText =`You already know the weather for ${(input.value)}`;
     input.value = ""
 
     
@@ -28,9 +28,12 @@ if(cities.innerHTML.toLowerCase().includes(input.value.toLowerCase())){
         let city = document.createElement("div");
         city.className = "city";
         cities.appendChild(city)
+        city.innerHTML += `<p>${name}<sup>${sys.country}</sup></p>
+         <p>${(main.temp).toFixed()}<sup>°C</sup></p> 
+         <p><img src="http://openweathermap.org/img/wn/${weather[0].icon}@2x.png" alt="" /></p> 
+         <p>${(weather[0].description).toUpperCase()}</p>`
 
-
-        city.innerHTML += `${name} <sup>${sys.country}</sup>  <br/> ${weather[0].main} <br/> ${ main.temp} <br/> <img src="http://openweathermap.org/img/wn/${weather[0].icon}@2x.png" alt="" /> <br/> ${weather[0].description} `
+         input.value = ""
         
         
     } catch (error) { 
