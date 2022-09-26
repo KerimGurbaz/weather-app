@@ -47,6 +47,7 @@ button {
   height: 50vh;
 }
 .city {
+  position: relative;
   background-color: white;
   color: black;
   padding: 1rem 2rem;
@@ -83,4 +84,10 @@ img {
 
 .another {
   color: white;
+}
+
+.fa-solid {
+  position: absolute;
+  margin-left: 7rem;
+  top: 1rem;
 }
