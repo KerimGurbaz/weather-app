@@ -40,11 +40,13 @@ button {
   color: white;
 }
 .cities {
-  display: flex;
-  justify-content: start;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 1rem;
+  /* justify-content: start;
   align-items: center;
   margin-top: 5rem;
-  height: 50vh;
+  height: 50vh; */
 }
 .city {
   position: relative;
@@ -84,10 +86,4 @@ img {
 
 .another {
   color: white;
-}
-
-.fa-solid {
-  position: absolute;
-  margin-left: 7rem;
-  top: 1rem;
 }
